@@ -21,21 +21,21 @@ class Carousel extends Component {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src={`../${this.props.product.imgUrl}`}
+              src={`${this.props.product.imgUrl}`}
               className="d-block w-100"
               alt="Consola mini fichin"
             />
           </div>
           <div className="carousel-item">
             <img
-              src={`../${this.props.product.imgUrl}`}
+              src={`${this.props.product.imgUrl}`}
               className="d-block w-100"
               alt="Consola mini fichin"
             />
           </div>
           <div className="carousel-item">
             <img
-              src={`../${this.props.product.imgUrl}`}
+              src={`${this.props.product.imgUrl}`}
               className="d-block w-100"
               alt="Consola mini fichin"
             />
