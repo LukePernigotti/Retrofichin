@@ -73,7 +73,7 @@ class Header extends Component {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/retrocichin/#/contact">
+                <a className="nav-link" href="/retrofichin/#/contact">
                   <span className="font-icon contact_icon mr-2" />
                   Contacto
                 </a>
