@@ -37,9 +37,16 @@ class Routes extends Component {
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL}>
-        <Route path="/" exact component={Home} />
-        <Route path="/product/:id" component={Product} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+        <Route
+          path={process.env.PUBLIC_URL + "/product/:id"}
+          component={Product}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/contact"}
+          exact
+          component={Contact}
+        />
       </Router>
     );
   }
