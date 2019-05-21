@@ -37,9 +37,9 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Route path="/" exact component={Home} />
-        <Route path="/product/:id" component={Product} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path="/#" exact component={Home} />
+        <Route path="/#/product/:id" component={Product} />
+        <Route path="/#/contact" exact component={Contact} />
       </Router>
     );
   }
