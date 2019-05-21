@@ -24,7 +24,7 @@ class Header extends Component {
           <nav className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/#/">
                   <span className="font-icon home_icon mr-2" />
                   Inicio
                 </a>
@@ -55,7 +55,7 @@ class Header extends Component {
                               <li>
                                 <a
                                   className="dropdown-item"
-                                  href={`/product/${product.id}`}
+                                  href={`/#/product/${product.id}`}
                                 >
                                   <span
                                     className={`font-icon ${product.icon} mr-2`}
@@ -73,7 +73,7 @@ class Header extends Component {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <a className="nav-link" href="/#/contact">
                   <span className="font-icon contact_icon mr-2" />
                   Contacto
                 </a>
