@@ -1,0 +1,325 @@
+// Variable Overrides
+@import url("../css/fonts/Icomoon/icomoon.css");
+@import url("fonts/ArcadeClassic/arcadeclassic.css");
+@import url("fonts/Pixelmix/pixelmix.css");
+@import url("fonts/PressStart/pressstart.css");
+
+@function size($size) {
+  @return $size - 0.75;
+}
+
+$body-bg: #ededed;
+$theme-colors: (
+  "primary": #2d2d2d,
+  "secondary": #ff6600
+);
+$primary: #2d2d2d;
+$secondary: #ff6600;
+
+$price-size: 2em;
+
+$nav-link-padding-y: 0.125rem !default;
+$nav-link-padding-x: 0rem !default;
+$nav-link-margin-y: 0.375rem !default;
+$nav-link-margin-x: 1rem !default;
+
+$carousel-control-color: $secondary;
+$carousel-indicator-active-bg: $secondary;
+$carousel-indicator-width: 16px;
+$carousel-indicator-height: 16px;
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2.title::before {
+  content: " ";
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: $primary;
+  position: absolute;
+  top: 2.75em;
+  left: calc(50% - 30px);
+}
+
+header {
+  padding: 0 !important;
+  h1 a {
+    font-family: "Russo One", sans-serif;
+  }
+  nav li {
+    margin-right: 5px;
+  }
+
+  a {
+    color: #ededed !important;
+  }
+
+  .font-icon {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    &::before {
+      color: #ededed !important;
+    }
+  }
+}
+
+.banner {
+  padding: 0 !important;
+}
+.jumbotron {
+  background-color: #33ddff !important; /*ver de cambiar a una variable y cómo quitarle el !important ya no es el primary 3399FF :s*/
+  background-image: url("../img/pattern_banner.png");
+  border-top: 3px solid rgb(219, 219, 219); /*quitarle esto y el borde redondeado creo que se lo puedo quitar con una propiedad de bs*/
+
+  h2,
+  a {
+    font-family: "Press Start";
+  }
+  h2 {
+    font-size: 2.75em;
+    @media screen and (max-width: 420px) {
+      font-size: 2em;
+    }
+  }
+  a {
+    color: white;
+  } /*ver bien el color*/
+  p {
+    font-family: "Pixelmix";
+    @media screen and (max-width: 720px) {
+      /*preguntarle a Santiago si se puede poner la variable en el max-width o por qué no puedo*/
+      display: none;
+    }
+  }
+  picture img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-body ul li {
+  color: #8d8d8d;
+}
+
+.price {
+  color: $secondary;
+  font-size: $price-size;
+}
+
+.button {
+  width: 8rem;
+}
+
+.card-body img {
+  max-height: 168px !important; /*ver bien qué tamaños usar*/
+}
+
+footer {
+  background-color: $primary;
+  //height: 81px;   //sacar y ver si hace falta en contacto
+  //position: absolute; //sacar y ver si hace falta en contacto
+  //bottom: 0px; //sacar y ver si hace falta en contacto
+
+  @media screen and (min-width: 576px) {
+    background: url("../img/bg_footer_2.png") no-repeat right bottom,
+      url("../img/bg_footer.svg") repeat;
+    background-position-x: 70vw;
+    height: 300px;
+    background-color: $primary;
+    p:first-child {
+      color: yellow;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    p {
+      color: #ffffff;
+      font-size: 1.1em;
+    }
+    div.col {
+      margin-top: 1rem * 3;
+      margin-left: 1rem * 3;
+    } //$spacer * 3
+  }
+  @media screen and (max-width: 575px) {
+    p {
+      display: none;
+    } //ver de hacerlo sin el max-width
+  }
+
+  .social-media {
+    @media screen and (min-width: 576px) {
+      margin-top: 1rem * 3;
+    }
+  }
+  padding-top: 15px;
+  //height: 100%; //ver si hace falta si saco lo de contacto
+
+  li {
+    @media screen and (max-width: 575px) {
+      margin: auto;
+    }
+    background: #ffffff;
+    height: 50px;
+    width: 50px;
+    .fb:hover {
+      color: #3b5998;
+    }
+    .tw:hover {
+      color: #00acee;
+    }
+    .ins:hover {
+      color: #dd2a7b;
+    }
+
+    a {
+      height: 100%;
+      width: 100%;
+      color: $primary;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+
+      span:not(.font-icon) {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        font-size: 0;
+      }
+
+      .Facebook,
+      .Instagram {
+        font-size: 22px;
+      }
+      .Twitter {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/******************************/
+/*        Product page        */
+/******************************/
+/*.img-options {
+  background-color: $primary;
+  height: 20px;
+  width: 20px;
+}
+*/
+/*.img-color-options {
+  //background-color: $primary;
+  height: 0;
+  width: 0;
+  border-top: 40px solid $primary;
+  border-right: 40px solid black;
+}*/
+.carousel-indicators li {
+  //background-color: $secondary !important;
+  border-radius: 50%;
+  /*position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    position: relative;
+    left: 2px;
+    z-index: 30000;
+  }*/
+
+  &active {
+    //background-color: blue;
+  }
+}
+
+/*.carousel-active {
+  background-color: $secondary;
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: $secondary;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    position: relative;
+    left: 2px;
+  }
+}*/
+.price-label {
+  font-size: size($price-size);
+}
+
+.nav-link {
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  margin: $nav-link-margin-y $nav-link-margin-x;
+}
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: $secondary;
+  border-bottom: 1px solid $secondary;
+}
+
+.nav-link {
+  color: $secondary;
+}
+
+/******************************/
+/*          Contact           */
+/******************************/
+form {
+  label {
+    span {
+      display: inline-block;
+      width: 16px;
+      margin-right: 15px;
+    }
+    .email {
+      font-size: 0.8em;
+    }
+  }
+  .form-control {
+    border: 0px;
+    border-bottom: #9d9d9d solid 1px; //variable
+    border-radius: 0;
+    background-color: transparent;
+    &:focus {
+      //@mixin form-control-focus()
+      background: transparent;
+      border-radius: 5px;
+      border: #9d9d9d solid 2px;
+    }
+  }
+}
+
+/******************************/
+/*       Success window       */
+/******************************/
+.success-window {
+  background: #00acee url("../img/kirby.gif") no-repeat calc(50% - 0px) 30px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  color: white;
+
+  .message-box {
+    margin-top: 250px;
+  }
+}
+
+// Bootstrap Sass Imports
+@import "../../node_modules/bootstrap/scss/bootstrap";
