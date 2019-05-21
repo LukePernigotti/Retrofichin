@@ -17,7 +17,7 @@ class Document extends Component {
       <React.Fragment>
         <ProductProvider>
           <Header />
-          <Routes />
+          <Routes basename={process.env.PUBLIC_URL} />
         </ProductProvider>
         <Footer />
       </React.Fragment>
