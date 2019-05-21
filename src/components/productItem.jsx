@@ -22,7 +22,7 @@ class ProductItem extends Component {
               </div>
               <div className="col-6 d-flex align-items-center">
                 <a
-                  href={`/product/${id}`}
+                  href={`/retrofichin/#/product/${id}`}
                   className="btn btn-secondary btn-md rounded-pill button"
                 >
                   + Ver Más
