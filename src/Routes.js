@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import Contact from "./components/Contact";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 class Routes extends Component {
   state = {
@@ -37,16 +37,9 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
-        <Route
-          path={process.env.PUBLIC_URL + "/product/:id"}
-          component={Product}
-        />
-        <Route
-          path={process.env.PUBLIC_URL + "/contact"}
-          exact
-          component={Contact}
-        />
+        <Route path="/" exact component={Home} />
+        <Route path="/product/:id" component={Product} />
+        <Route path="/contact" exact component={Contact} />
       </Router>
     );
   }
