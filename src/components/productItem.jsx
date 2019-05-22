@@ -3,18 +3,20 @@ import React, { Component } from "react";
 class ProductItem extends Component {
   state = {};
   render() {
-    const { name, id, imgUrl, price } = this.props.product;
+    const { name, id, imgUrl, price, miniDetails } = this.props.product;
+    console.log(this.props.product.miniDetails);
     return (
       <div className="col-sm-12 col-md-6">
         <div className="card mb-4">
           <div className="card-body mx-auto">
             <h3 className="card-title text-center text-uppercase">{name}</h3>
             <div className="d-flex justify-content-center mx-auto">
-              <img src={imgUrl} alt={name} />
+              <img src={`../${imgUrl}`} alt={name} />
             </div>
             <ul>
-              <li>6400 juegos</li>
-              <li>3 colores para elegir</li>
+              {Object.values(miniDetails).map(detail => {
+                return <li>{detail}</li>;
+              })}
             </ul>
             <div className="row">
               <div className="col-6 d-flex align-items-center">
