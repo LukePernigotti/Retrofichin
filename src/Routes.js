@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Home from "./components/Home";
-import Product from "./components/Product";
-import Contact from "./components/Contact";
+import Home from "./components/Home/Home";
+import Product from "./components/Product/Product";
+import Contact from "./components/Contact/Contact";
 
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 

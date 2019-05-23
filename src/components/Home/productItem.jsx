@@ -4,7 +4,7 @@ class ProductItem extends Component {
   state = {};
   render() {
     const { name, id, imgUrl, price, miniDetails } = this.props.product;
-    console.log(this.props.product.miniDetails);
+    //console.log(this.props.product.miniDetails);
     return (
       <div className="col-sm-12 col-md-6">
         <div className="card mb-4">

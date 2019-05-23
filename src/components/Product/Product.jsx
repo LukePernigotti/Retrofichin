@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 import { withRouter } from "react-router";
 
-import { ProductConsumer } from "../context";
+import { ProductConsumer } from "../../context";
 
 class Product extends Component {
   constructor() {
@@ -43,7 +43,13 @@ class Product extends Component {
       <ProductConsumer>
         {value => {
           const product = value.getItem(Number(this.props.match.params.id));
-          return <ProductInside key={product.id} product={product} />;
+          return (
+            <ProductInside
+              key={product.id}
+              product={product}
+              products={value.products}
+            />
+          );
         }}
       </ProductConsumer>
     );

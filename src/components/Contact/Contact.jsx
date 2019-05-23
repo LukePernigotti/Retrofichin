@@ -117,7 +117,9 @@ class Contact extends Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h2 className="text-center text-uppercase my-5 title">Contacto</h2>
+            <h2 className="text-center text-uppercase mb-5 mt-3 title">
+              Contacto
+            </h2>
           </div>
         </div>
 

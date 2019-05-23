@@ -16,7 +16,8 @@ export const productsData = [
       2: "3 Variantes para elegir: gris, negra o blanca",
       3: "Memoría de 3gb de ram",
       4: "Compatible con teclado y mouse",
-      5: "Hasta 6 jugadores"
+      5: "Hasta 6 jugadores",
+      6: "Podés agregar joysticks a tu pedido"
     }
   },
   {
@@ -42,7 +43,6 @@ export const productsData = [
   {
     id: 3,
     name: "Mini Fichín Cooler",
-    type: "Cooler",
     price: 8500,
     imgUrl: "img/consolas/mini_fichin_cooler.jpg",
     icon: "mini_icon",
@@ -74,7 +74,7 @@ export const productsData = [
       "Es una <strong>consola multiplataforma de video juegos retro</strong> con capacidad para más de 14.000 juegos de 35 consolas diferentes, entre ellas las más populares como PlayStation, Nintendo y Sega. Es compatible con teclado y mouse.",
     details: {
       1: "Más de 6400 Juegos",
-      2: "3 Variantes para elegir: gris, negra o blanca",
+      2: "3 Variantes para elegir",
       3: "Memoría de 3gb de ram",
       4: "Compatible con teclado y mouse",
       5: "Hasta 6 jugadores"
@@ -94,7 +94,7 @@ export const productsData = [
       "Es una <strong>consola multiplataforma de video juegos retro</strong> con capacidad para más de 14.000 juegos de 35 consolas diferentes, entre ellas las más populares como PlayStation, Nintendo y Sega. Es compatible con teclado y mouse.",
     details: {
       1: "Más de 6400 Juegos",
-      2: "3 Variantes para elegir: gris, negra o blanca",
+      2: "3 Variantes para elegir",
       3: "Memoría de 3gb de ram",
       4: "Compatible con teclado y mouse",
       5: "Hasta 6 jugadores"
@@ -114,7 +114,7 @@ export const productsData = [
       "Es una <strong>consola multiplataforma de video juegos retro</strong> con capacidad para más de 14.000 juegos de 35 consolas diferentes, entre ellas las más populares como PlayStation, Nintendo y Sega. Es compatible con teclado y mouse.",
     details: {
       1: "Más de 6400 Juegos",
-      2: "3 Variantes para elegir: gris, negra o blanca",
+      2: "3 Variantes para elegir",
       3: "Memoría de 3gb de ram",
       4: "Compatible con teclado y mouse",
       5: "Hasta 6 jugadores"
