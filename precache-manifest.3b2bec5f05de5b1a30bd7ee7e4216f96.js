@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8867eaea99856ef24191be313250457f",
+    "revision": "cad43e0720f8dbcf21b30c9330e98e86",
     "url": "/retrofichin/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/retrofichin/static/js/2.99519bb6.chunk.js"
   },
   {
-    "revision": "105918c89d83deca074c",
-    "url": "/retrofichin/static/js/main.84b334e7.chunk.js"
+    "revision": "f6bdfbefd5a08287c952",
+    "url": "/retrofichin/static/js/main.a273b301.chunk.js"
   },
   {
     "revision": "820e90167c43a20a36d2",
