@@ -17,9 +17,12 @@ h2.title::before {
   height: 2px;
   background-color: #2d2d2d;
   position: absolute;
-  top: 2.75em;
+  top: 1.9em;
   left: calc(50% - 30px); }
 
+/**********************/
+/*       Header       */
+/**********************/
 header {
   padding: 0 !important; }
   header h1 a {
@@ -2465,7 +2468,7 @@ input[type="button"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #2d2d2d;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem; }
