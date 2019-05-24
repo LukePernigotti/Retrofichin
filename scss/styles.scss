@@ -8,7 +8,7 @@
   @return $size - 0.75;
 }
 
-$body-bg: #ededed;
+//$body-bg: #ededed;
 $theme-colors: (
   "primary": #2d2d2d,
   "secondary": #ff6600
@@ -76,6 +76,9 @@ header {
   }
 }
 
+/***************/
+/*     HOME    */
+/***************/
 .banner {
   padding: 0 !important;
 }
@@ -110,8 +113,14 @@ header {
   }
 }
 
+.consoles-bg-p {
+  background-color: #ededed;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .card-body ul li {
-  color: #8d8d8d;
+  color: #8d8d8d; //poner variable
 }
 
 .price {
@@ -120,7 +129,7 @@ header {
 }
 
 .button {
-  width: 8rem;
+  width: 9rem;
 }
 
 .card-body img {
@@ -214,6 +223,10 @@ footer {
 /******************************/
 /*        Product page        */
 /******************************/
+.consoles-nav {
+  background: #5d5d5d; //ver de ponerle una variable
+}
+
 /*.img-options {
   background-color: $primary;
   height: 20px;
