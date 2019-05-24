@@ -7,22 +7,26 @@ class Products extends Component {
   state = {};
   render() {
     return (
-      <div className="container-fluid" id="consoles">
-        <div className="row">
-          <div className="col">
-            <h2 className="mb-4 text-center text-uppercase">Consolas retro</h2>
+      <div className="container-fluid pt-5 consoles-bg-p">
+        <div className="container" id="consoles">
+          <div className="row">
+            <div className="col">
+              <h2 className="mb-4 text-center text-uppercase">
+                Consolas retro
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="row">
-          {
-            <ProductConsumer>
-              {value => {
-                return value.products.map(product => {
-                  return <ProductItem key={product.id} product={product} />;
-                });
-              }}
-            </ProductConsumer>
-          }
+          <div className="row">
+            {
+              <ProductConsumer>
+                {value => {
+                  return value.products.map(product => {
+                    return <ProductItem key={product.id} product={product} />;
+                  });
+                }}
+              </ProductConsumer>
+            }
+          </div>
         </div>
       </div>
     );

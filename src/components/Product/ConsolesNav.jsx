@@ -10,7 +10,7 @@ class ConsolesNav extends Component {
   render() {
     const { products } = this.props;
     return (
-      <ul className="nav nav nav-pills nav-fill">
+      <ul className="nav nav nav-pills nav-fill consoles-nav">
         {Object.values(products).map(value => {
           return (
             <li className="nav-item" key={value.id}>

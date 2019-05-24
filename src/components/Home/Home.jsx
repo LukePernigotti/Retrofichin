@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Banner from "./banner";
+import About from "./About";
 import Products from "./products";
 
 class Home extends Component {
@@ -7,6 +8,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Banner />
+        <About />
         <Products />
       </React.Fragment>
     );

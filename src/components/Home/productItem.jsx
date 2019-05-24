@@ -8,10 +8,10 @@ class ProductItem extends Component {
     return (
       <div className="col-sm-12 col-md-6">
         <div className="card mb-4">
-          <div className="card-body mx-auto">
+          <div className="card-body mx-2">
             <h3 className="card-title text-center text-uppercase">{name}</h3>
             <div className="d-flex justify-content-center mx-auto">
-              <img src={`../${imgUrl}`} alt={name} />
+              <img src={`${imgUrl}`} alt={name} />
             </div>
             <ul>
               {Object.values(miniDetails).map(detail => {
