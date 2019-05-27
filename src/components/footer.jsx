@@ -15,7 +15,7 @@ class Footer extends Component {
                   className="d-flex align-items-center justify-content-center fb"
                   href="#"
                 >
-                  <span className="font-icon Facebook" />
+                  <span className="font-icon facebook" />
                   <span>Facebook</span>
                 </a>
               </li>
@@ -24,7 +24,7 @@ class Footer extends Component {
                   className="d-flex align-items-center justify-content-center tw"
                   href="#"
                 >
-                  <span className="font-icon Twitter" />
+                  <span className="font-icon twitter" />
                   <span>Twitter</span>
                 </a>
               </li>
@@ -33,7 +33,7 @@ class Footer extends Component {
                   className="d-flex align-items-center justify-content-center ins"
                   href="#"
                 >
-                  <span className="font-icon Instagram" />
+                  <span className="font-icon instagram" />
                   <span>Instagram</span>
                 </a>
               </li>

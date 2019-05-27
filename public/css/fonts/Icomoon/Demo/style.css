@@ -1,18 +1,17 @@
 @font-face {
-  font-family: "icomoon";
-  src: url("icomoon.eot?dk9rai");
-  src: url("icomoon.eot?dk9rai#iefix") format("embedded-opentype"),
-    url("icomoon.ttf?dk9rai") format("truetype"),
-    url("icomoon.woff?dk9rai") format("woff"),
-    url("icomoon.svg?dk9rai#icomoon") format("svg");
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dk9rai');
+  src:  url('fonts/icomoon.eot?dk9rai#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dk9rai') format('truetype'),
+    url('fonts/icomoon.woff?dk9rai') format('woff'),
+    url('fonts/icomoon.svg?dk9rai#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="font-icon"],
-[class*=" font-icon"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -25,271 +24,271 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-icon.checkmark:before {
+.icon-checkmark:before {
   content: "\e93a";
   color: #fff;
 }
-.font-icon.menos:before {
+.icon-menos:before {
   content: "\e93b";
   color: #aaa;
 }
-.font-icon.arrow_left:before {
+.icon-arrow_left:before {
   content: "\e900";
   color: #fff;
 }
-.font-icon.arrow_right:before {
+.icon-arrow_right:before {
   content: "\e901";
   color: #fff;
 }
-.font-icon.back:before {
+.icon-back:before {
   content: "\e902";
 }
-.font-icon.close .path1:before {
+.icon-close .path1:before {
   content: "\e903";
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path2:before {
+.icon-close .path2:before {
   content: "\e904";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path3:before {
+.icon-close .path3:before {
   content: "\e905";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path4:before {
+.icon-close .path4:before {
   content: "\e906";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path5:before {
+.icon-close .path5:before {
   content: "\e907";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path6:before {
+.icon-close .path6:before {
   content: "\e908";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path7:before {
+.icon-close .path7:before {
   content: "\e909";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path8:before {
+.icon-close .path8:before {
   content: "\e90a";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path9:before {
+.icon-close .path9:before {
   content: "\e90b";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path10:before {
+.icon-close .path10:before {
   content: "\e90c";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path11:before {
+.icon-close .path11:before {
   content: "\e90d";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path12:before {
+.icon-close .path12:before {
   content: "\e90e";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path13:before {
+.icon-close .path13:before {
   content: "\e90f";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path14:before {
+.icon-close .path14:before {
   content: "\e910";
   margin-left: -1.1123046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.close .path15:before {
+.icon-close .path15:before {
   content: "\e911";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path16:before {
+.icon-close .path16:before {
   content: "\e912";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path17:before {
+.icon-close .path17:before {
   content: "\e913";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path18:before {
+.icon-close .path18:before {
   content: "\e914";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path19:before {
+.icon-close .path19:before {
   content: "\e915";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path20:before {
+.icon-close .path20:before {
   content: "\e916";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path21:before {
+.icon-close .path21:before {
   content: "\e917";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path22:before {
+.icon-close .path22:before {
   content: "\e918";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path23:before {
+.icon-close .path23:before {
   content: "\e919";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path24:before {
+.icon-close .path24:before {
   content: "\e91a";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path25:before {
+.icon-close .path25:before {
   content: "\e91b";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path26:before {
+.icon-close .path26:before {
   content: "\e91c";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path27:before {
+.icon-close .path27:before {
   content: "\e91d";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.close .path28:before {
+.icon-close .path28:before {
   content: "\e91e";
   margin-left: -1.1123046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.consolas:before {
+.icon-consolas:before {
   content: "\e91f";
   color: #999;
 }
-.font-icon.contact:before {
+.icon-contact:before {
   content: "\e920";
   color: #999;
 }
-.font-icon.email:before {
+.icon-email:before {
   content: "\e921";
 }
-.font-icon.facebook:before {
+.icon-facebook:before {
   content: "\e922";
 }
-.font-icon.home:before {
+.icon-home:before {
   content: "\e923";
   color: #999;
 }
-.font-icon.instagram:before {
+.icon-instagram:before {
   content: "\e924";
 }
-.font-icon.m_arcade:before {
+.icon-m_arcade:before {
   content: "\e925";
   color: #999;
 }
-.font-icon.m_bartop:before {
+.icon-m_bartop:before {
   content: "\e926";
   color: #999;
 }
-.font-icon.m_cooler:before {
+.icon-m_cooler:before {
   content: "\e927";
   color: #999;
 }
-.font-icon.m_doblepalanca:before {
+.icon-m_doblepalanca:before {
   content: "\e928";
   color: #999;
 }
-.font-icon.m_minifichin .path1:before {
+.icon-m_minifichin .path1:before {
   content: "\e929";
   color: rgb(153, 153, 153);
 }
-.font-icon.m_minifichin .path2:before {
+.icon-m_minifichin .path2:before {
   content: "\e92a";
   margin-left: -1.3447265625em;
   color: rgb(244, 244, 244);
 }
-.font-icon.m_minifichin .path3:before {
+.icon-m_minifichin .path3:before {
   content: "\e92b";
   margin-left: -1.3447265625em;
   color: rgb(244, 244, 244);
 }
-.font-icon.m_minifichin .path4:before {
+.icon-m_minifichin .path4:before {
   content: "\e92c";
   margin-left: -1.3447265625em;
   color: rgb(244, 244, 244);
 }
-.font-icon.m_nespi:before {
+.icon-m_nespi:before {
   content: "\e92d";
   color: #999;
 }
-.font-icon.mas:before {
+.icon-mas:before {
   content: "\e92e";
   color: #aaa;
 }
-.font-icon.menu .path1:before {
+.icon-menu .path1:before {
   content: "\e92f";
   color: rgb(255, 255, 255);
 }
-.font-icon.menu .path2:before {
+.icon-menu .path2:before {
   content: "\e930";
   margin-left: -1.748046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.menu .path3:before {
+.icon-menu .path3:before {
   content: "\e931";
   margin-left: -1.748046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.menu .path4:before {
+.icon-menu .path4:before {
   content: "\e932";
   margin-left: -1.748046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.menu .path5:before {
+.icon-menu .path5:before {
   content: "\e933";
   margin-left: -1.748046875em;
   color: rgb(255, 255, 255);
 }
-.font-icon.menu .path6:before {
+.icon-menu .path6:before {
   content: "\e934";
   margin-left: -1.748046875em;
   color: rgb(204, 204, 204);
 }
-.font-icon.message:before {
+.icon-message:before {
   content: "\e935";
 }
-.font-icon.search:before {
+.icon-search:before {
   content: "\e936";
   color: #c9c9c9;
 }
-.font-icon.send:before {
+.icon-send:before {
   content: "\e937";
   color: #fff;
 }
-.font-icon.twitter:before {
+.icon-twitter:before {
   content: "\e938";
 }
-.font-icon.user:before {
+.icon-user:before {
   content: "\e939";
 }

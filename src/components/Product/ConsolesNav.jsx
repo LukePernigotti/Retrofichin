@@ -18,6 +18,7 @@ class ConsolesNav extends Component {
                 className={`nav-link ${this.isActive(value.name)}`}
                 href={`/retrofichin/#/product/${value.id}`}
               >
+                <span className={`font-icon ${value.icon} mr-2`} />
                 {value.name}
               </a>
             </li>

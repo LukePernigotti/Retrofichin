@@ -25,7 +25,7 @@ class Header extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a className="nav-link" href="/retrofichin/#/">
-                  <span className="font-icon home_icon mr-2" />
+                  <span className="font-icon home mr-2" />
                   Inicio
                 </a>
               </li>
@@ -39,6 +39,7 @@ class Header extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
+                  <span className="font-icon consolas mr-2" />
                   Consolas
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -74,7 +75,7 @@ class Header extends Component {
 
               <li className="nav-item">
                 <a className="nav-link" href="/retrofichin/#/contact">
-                  <span className="font-icon contact_icon mr-2" />
+                  <span className="font-icon contact mr-2" />
                   Contacto
                 </a>
               </li>
