@@ -47,7 +47,7 @@ header {
 .jumbotron {
   background-color: #33ddff !important;
   /*ver de cambiar a una variable y c├│mo quitarle el !important ya no es el primary 3399FF :s*/
-  background-image: url("../img/pattern_banner.png");
+  background-image: url("../img/retropattern.svg");
   border-top: 3px solid #dbdbdb;
   /*quitarle esto y el borde redondeado creo que se lo puedo quitar con una propiedad de bs*/
   /*ver bien el color*/ }

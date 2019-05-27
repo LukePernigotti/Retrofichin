@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 class Carousel extends Component {
   state = {};
+  isActive(e) {
+    if (e === this.props.product.imgUrl[0] || e == 0) return "active";
+  }
+
   render() {
+    const { imgUrl } = this.props.product;
     return (
       <div
         id="carouselControls"
@@ -10,36 +15,30 @@ class Carousel extends Component {
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
-          <li
-            data-target="#carouselControls"
-            data-slide-to="0"
-            className="active"
-          />
-          <li data-target="#carouselControls" data-slide-to="1" />
-          <li data-target="#carouselControls" data-slide-to="2" />
+          {Object.keys(imgUrl).map(imgNum => {
+            return (
+              <li
+                data-target="#carouselControls"
+                data-slide-to={imgNum}
+                className={this.isActive(imgNum)}
+                key={imgNum}
+              />
+            );
+          })}
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src={`${this.props.product.imgUrl}`}
-              className="d-block w-100"
-              alt="Consola mini fichin"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={`${this.props.product.imgUrl}`}
-              className="d-block w-100"
-              alt="Consola mini fichin"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={`${this.props.product.imgUrl}`}
-              className="d-block w-100"
-              alt="Consola mini fichin"
-            />
-          </div>
+          {Object.values(imgUrl).map(img => {
+            console.log(img);
+            return (
+              <div className={`carousel-item ${this.isActive(img)}`} key={img}>
+                <img
+                  src={`${img}`}
+                  className="d-block w-100"
+                  alt="Consola mini fichin"
+                />
+              </div>
+            );
+          })}
         </div>
         <a
           className="carousel-control-prev"

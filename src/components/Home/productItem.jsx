@@ -11,7 +11,7 @@ class ProductItem extends Component {
           <div className="card-body mx-2">
             <h3 className="card-title text-center text-uppercase">{name}</h3>
             <div className="d-flex justify-content-center mx-auto">
-              <img src={`${imgUrl}`} alt={name} />
+              <img src={`${imgUrl[0]}`} alt={name} />
             </div>
             <ul>
               {Object.values(miniDetails).map(detail => {
