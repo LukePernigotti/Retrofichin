@@ -3,14 +3,15 @@ export const productsData = [
     id: 1,
     name: "Mini Fichín Clásico",
     price: 6500,
-    imgUrl: {
-      0: "img/consolas/mini_fichin/Frente.png",
-      1: "img/consolas/mini_fichin/Lateral.png",
-      2: "img/consolas/mini_fichin/Posterior.png",
-      3: "img/consolas/mini_fichin/Puertos.png",
-      4: "img/consolas/mini_fichin/Mano.png"
+    imgUrl: "../img/consolas/mini_fichin/",
+    imgName: {
+      0: "frente.png",
+      1: "Lateral.png",
+      2: "Posterior.png",
+      3: "Puertos.png",
+      4: "Mano.png"
     },
-    icon: "mini_icon",
+    icon: "m_minifichin",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "3 colores para elegir"
@@ -30,8 +31,9 @@ export const productsData = [
     id: 2,
     name: "Mini Fichín Nespi",
     price: 8500,
-    imgUrl: { 0: "img/consolas/mini_fichin_nespi.jpg" },
-    icon: "mini_icon",
+    imgUrl: "../img/consolas/",
+    imgName: { 0: "mini_fichin_nespi.jpg" },
+    icon: "m_nespi",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "Diseño a lo Nintendo"
@@ -50,8 +52,9 @@ export const productsData = [
     id: 3,
     name: "Mini Fichín Cooler",
     price: 8500,
-    imgUrl: { 0: "img/consolas/mini_fichin_cooler.jpg" },
-    icon: "mini_icon",
+    imgUrl: "../img/consolas/",
+    imgName: { 0: "mini_fichin_cooler.jpg" },
+    icon: "m_cooler",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "Con cooler incluido"
@@ -70,8 +73,9 @@ export const productsData = [
     id: 4,
     name: "Doble Palanca",
     price: 7000,
-    imgUrl: { 0: "img/consolas/doble_palanca_md.jpg" },
-    icon: "doble_icon",
+    imgUrl: "../img/consolas/",
+    imgName: { 0: "doble_palanca_md.jpg" },
+    icon: "m_doblepalanca",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "Para dos jugadores"
@@ -90,8 +94,9 @@ export const productsData = [
     id: 5,
     name: "Bartop",
     price: 10000,
-    imgUrl: { 0: "img/consolas/bartop_md.png" },
-    icon: "bartop_icon",
+    imgUrl: "../img/consolas/",
+    imgName: { 0: "bartop_md.png" },
+    icon: "m_bartop",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "Con pantalla incluida"
@@ -110,8 +115,9 @@ export const productsData = [
     id: 6,
     name: "Arcade",
     price: 11500,
-    imgUrl: { 0: "img/consolas/arcade_md.jpg" },
-    icon: "arcade_icon",
+    imgUrl: "../img/consolas/",
+    imgName: { 0: "arcade_md.jpg" },
+    icon: "m_arcade",
     miniDetails: {
       1: "Más de 6400 Juegos",
       2: "Arcade completo"
