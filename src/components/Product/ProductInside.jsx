@@ -13,7 +13,6 @@ class ProductInside extends Component {
     const { product, products } = this.props;
     return (
       <React.Fragment>
-        <ConsolesNav key={product.id} product={product} products={products} />
         <div className="container mb-4">
           <div className="row mb-4">
             <div className="col">
@@ -40,6 +39,7 @@ class ProductInside extends Component {
             </div>
           </div>
         </div>
+        <ConsolesNav key={product.id} product={product} products={products} />
       </React.Fragment>
     );
   }

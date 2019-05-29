@@ -7,7 +7,7 @@ class Products extends Component {
   state = {};
   render() {
     return (
-      <div className="container-fluid pt-5 consoles-bg-p">
+      <div className="container-fluid pt-5 consoles-bg consoles-px">
         <div className="container" id="consoles">
           <div className="row">
             <div className="col">

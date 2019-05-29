@@ -45,8 +45,6 @@ header {
   padding: 0 !important; }
 
 .jumbotron {
-  background-color: #33ddff !important;
-  /*ver de cambiar a una variable y c├│mo quitarle el !important ya no es el primary 3399FF :s*/
   background-image: url("../img/retropattern.svg");
   border-top: 3px solid #dbdbdb;
   /*quitarle esto y el borde redondeado creo que se lo puedo quitar con una propiedad de bs*/
@@ -71,10 +69,43 @@ header {
     width: 100%;
     height: 100%; }
 
-.consoles-bg-p {
-  background-color: #ededed;
+.consoles-bg {
+  background-color: #eaeaea; }
+
+.consoles-px {
   padding-left: 0 !important;
   padding-right: 0 !important; }
+
+/**********************/
+/*       Games        */
+/**********************/
+.flip-box {
+  background-color: transparent;
+  width: 240px;
+  height: 180px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */ }
+  .flip-box .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    /* Position the front and back side */
+    /* Style the back side */ }
+    .flip-box .flip-box-inner .flip-box-front,
+    .flip-box .flip-box-inner .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; }
+    .flip-box .flip-box-inner .flip-box-back {
+      transform: rotateY(180deg); }
+  .flip-box.flip-box.flipped .flip-box-inner {
+    transform: rotateY(180deg); }
 
 .card-body ul li {
   color: #8d8d8d; }
@@ -149,8 +180,12 @@ footer {
 /******************************/
 /*        Product page        */
 /******************************/
-.consoles-nav {
-  background: #5d5d5d; }
+.consoles-nav .nav-item .nav-link {
+  max-width: 150px; }
+.consoles-nav .nav-item .bottom-name {
+  background: #000000;
+  color: white;
+  width: 150px; }
 
 /*.img-options {
   background-color: $primary;
@@ -271,6 +306,7 @@ form .form-control {
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --grey: #eaeaea;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1599,6 +1635,22 @@ pre {
   .table-hover .table-dark:hover > th {
     background-color: #b9bbbe; }
 
+.table-grey,
+.table-grey > th,
+.table-grey > td {
+  background-color: #f9f9f9; }
+.table-grey th,
+.table-grey td,
+.table-grey thead th,
+.table-grey tbody + tbody {
+  border-color: #f4f4f4; }
+
+.table-hover .table-grey:hover {
+  background-color: #ececec; }
+  .table-hover .table-grey:hover > td,
+  .table-hover .table-grey:hover > th {
+    background-color: #ececec; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2236,6 +2288,27 @@ fieldset:disabled a.btn {
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
 
+.btn-grey {
+  color: #212529;
+  background-color: #eaeaea;
+  border-color: #eaeaea; }
+  .btn-grey:hover {
+    color: #212529;
+    background-color: #d7d7d7;
+    border-color: #d1d1d1; }
+  .btn-grey:focus, .btn-grey.focus {
+    box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5); }
+  .btn-grey.disabled, .btn-grey:disabled {
+    color: #212529;
+    background-color: #eaeaea;
+    border-color: #eaeaea; }
+  .btn-grey:not(:disabled):not(.disabled):active, .btn-grey:not(:disabled):not(.disabled).active, .show > .btn-grey.dropdown-toggle {
+    color: #212529;
+    background-color: #d1d1d1;
+    border-color: #cacaca; }
+    .btn-grey:not(:disabled):not(.disabled):active:focus, .btn-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-grey.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5); }
+
 .btn-outline-primary {
   color: #2d2d2d;
   border-color: #2d2d2d; }
@@ -2387,6 +2460,25 @@ fieldset:disabled a.btn {
     border-color: #343a40; }
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
+
+.btn-outline-grey {
+  color: #eaeaea;
+  border-color: #eaeaea; }
+  .btn-outline-grey:hover {
+    color: #212529;
+    background-color: #eaeaea;
+    border-color: #eaeaea; }
+  .btn-outline-grey:focus, .btn-outline-grey.focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 234, 234, 0.5); }
+  .btn-outline-grey.disabled, .btn-outline-grey:disabled {
+    color: #eaeaea;
+    background-color: transparent; }
+  .btn-outline-grey:not(:disabled):not(.disabled):active, .btn-outline-grey:not(:disabled):not(.disabled).active, .show > .btn-outline-grey.dropdown-toggle {
+    color: #212529;
+    background-color: #eaeaea;
+    border-color: #eaeaea; }
+    .btn-outline-grey:not(:disabled):not(.disabled):active:focus, .btn-outline-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-grey.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(234, 234, 234, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3847,10 +3939,20 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
+.badge-grey {
+  color: #212529;
+  background-color: #eaeaea; }
+  a.badge-grey:hover, a.badge-grey:focus {
+    color: #212529;
+    background-color: #d1d1d1; }
+  a.badge-grey:focus, a.badge-grey.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(234, 234, 234, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #33ddff;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -3954,6 +4056,15 @@ input[type="button"].btn-block {
     border-top-color: #b9bbbe; }
   .alert-dark .alert-link {
     color: #040505; }
+
+.alert-grey {
+  color: #7a7a7a;
+  background-color: #fbfbfb;
+  border-color: #f9f9f9; }
+  .alert-grey hr {
+    border-top-color: #ececec; }
+  .alert-grey .alert-link {
+    color: #616161; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4215,6 +4326,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #1b1e21;
     border-color: #1b1e21; }
+
+.list-group-item-grey {
+  color: #7a7a7a;
+  background-color: #f9f9f9; }
+  .list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+    color: #7a7a7a;
+    background-color: #ececec; }
+  .list-group-item-grey.list-group-item-action.active {
+    color: #fff;
+    background-color: #7a7a7a;
+    border-color: #7a7a7a; }
 
 .close {
   float: right;
@@ -4894,6 +5016,14 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
+.bg-grey {
+  background-color: #eaeaea !important; }
+
+a.bg-grey:hover, a.bg-grey:focus,
+button.bg-grey:hover,
+button.bg-grey:focus {
+  background-color: #d1d1d1 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -4953,6 +5083,9 @@ button.bg-dark:focus {
 
 .border-dark {
   border-color: #343a40 !important; }
+
+.border-grey {
+  border-color: #eaeaea !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7726,6 +7859,12 @@ a.text-light:hover, a.text-light:focus {
 
 a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important; }
+
+.text-grey {
+  color: #eaeaea !important; }
+
+a.text-grey:hover, a.text-grey:focus {
+  color: #c4c4c4 !important; }
 
 .text-body {
   color: #212529 !important; }

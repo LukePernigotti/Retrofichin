@@ -2,7 +2,16 @@ import React, { Component } from "react";
 import { ProductConsumer } from "../context";
 
 class Header extends Component {
+  //para que el dropdown aparezca desplegado según el vw
+  isShowing() {
+    if (window.innerWidth < 992) return "show";
+  }
+  isTrue() {
+    if (window.innerWidth < 992) return "true";
+    else return "false";
+  }
   render() {
+    console.log(window.innerWidth);
     return (
       <header className="container-fluid">
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -29,7 +38,7 @@ class Header extends Component {
                   Inicio
                 </a>
               </li>
-              <li className="nav-item dropdown">
+              <li className={`nav-item dropdown ${this.isShowing()}`}>
                 <a
                   className="nav-link dropdown-toggle"
                   href="javascritp: void(0);"
@@ -37,12 +46,15 @@ class Header extends Component {
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
-                  aria-expanded="false"
+                  aria-expanded={this.isTrue()}
                 >
                   <span className="font-icon consolas mr-2" />
                   Consolas
                 </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div
+                  className={`dropdown-menu ${this.isShowing()}`}
+                  aria-labelledby="navbarDropdown"
+                >
                   <ul>
                     <ProductConsumer>
                       {value => {

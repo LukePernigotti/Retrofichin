@@ -3,11 +3,11 @@ import React, { Component } from "react";
 class Carousel extends Component {
   state = {};
   isActive(e) {
-    if (e === this.props.product.imgUrl[0] || e == 0) return "active";
+    if (e === this.props.product.imgName[0] || e == 0) return "active";
   }
 
   render() {
-    const { imgUrl } = this.props.product;
+    const { imgUrl, imgName } = this.props.product;
     return (
       <div
         id="carouselControls"
@@ -15,7 +15,7 @@ class Carousel extends Component {
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
-          {Object.keys(imgUrl).map(imgNum => {
+          {Object.keys(imgName).map(imgNum => {
             return (
               <li
                 data-target="#carouselControls"
@@ -27,12 +27,11 @@ class Carousel extends Component {
           })}
         </ol>
         <div className="carousel-inner">
-          {Object.values(imgUrl).map(img => {
-            console.log(img);
+          {Object.values(imgName).map(img => {
             return (
               <div className={`carousel-item ${this.isActive(img)}`} key={img}>
                 <img
-                  src={`${img}`}
+                  src={`../${imgUrl}${img}`}
                   className="d-block w-100"
                   alt="Consola mini fichin"
                 />
