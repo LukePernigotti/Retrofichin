@@ -11,10 +11,24 @@
 //$body-bg: #ededed;
 $theme-colors: (
   "primary": #2d2d2d,
-  "secondary": #ff6600
+  "secondary": #ff6600,
+  "grey": #eaeaea
 );
 $primary: #2d2d2d;
 $secondary: #ff6600;
+
+$menu-bg: #f4f4f4;
+$main-bg: #ffffff;
+$scnd-main-bg: #eaeaea; //web es #ffffff
+$select-bg: #6633ff;
+$buttons-color: #ff7c10; //web es #ff6600
+$special-blue: #3399ff;
+$footer-bg: #2d2d2d; //web es #333333
+$titles-and-menu-bg: #333333;
+$icons-color: #999999; //ver si sacar
+$text-color: #a5a5a5; //termina siendo un #999999
+
+$jumbotron-bg: #33ddff; //debería ser el azul especial?
 
 $dropdown-bg: $primary;
 
@@ -83,7 +97,7 @@ header {
   padding: 0 !important;
 }
 .jumbotron {
-  background-color: #33ddff !important; /*ver de cambiar a una variable y cómo quitarle el !important ya no es el primary 3399FF :s*/
+  //background-color: #33ddff !important; /*ver de cambiar a una variable y cómo quitarle el !important ya no es el primary 3399FF :s*/
   background-image: url("../img/retropattern.svg");
   border-top: 3px solid rgb(219, 219, 219); /*quitarle esto y el borde redondeado creo que se lo puedo quitar con una propiedad de bs*/
 
@@ -112,11 +126,60 @@ header {
     height: 100%;
   }
 }
-
-.consoles-bg-p {
-  background-color: #ededed;
+.consoles-bg {
+  background-color: $scnd-main-bg;
+}
+.consoles-px {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+/**********************/
+/*       Games        */
+/**********************/
+.flip-box {
+  background-color: transparent;
+  width: 240px;
+  height: 180px;
+  //border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+
+    /* Position the front and back side */
+    .flip-box-front,
+    .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+      //background-color: #bbb;
+      //color: black;
+    }
+
+    /* Style the back side */
+    .flip-box-back {
+      //background-color: dodgerblue;
+      //color: white;
+      transform: rotateY(180deg);
+    }
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  //&.flip-box:hover .flip-box-inner,
+  &.flip-box.flipped .flip-box-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 .card-body ul li {
@@ -223,8 +286,15 @@ footer {
 /******************************/
 /*        Product page        */
 /******************************/
-.consoles-nav {
-  background: #5d5d5d; //ver de ponerle una variable
+.consoles-nav .nav-item {
+  .nav-link {
+    max-width: 150px;
+  }
+  .bottom-name {
+    background: #000000; //ver de ponerle una variable
+    color: white; //ver de ponerle una variable
+    width: 150px;
+  }
 }
 
 /*.img-options {
