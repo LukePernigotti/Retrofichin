@@ -303,12 +303,45 @@ footer {
     width: 150px;
   }
 }
+.consoles-slider-container {
+  overflow: hidden !important;
 
-.slick-track {
-  display: flex;
-}
-.slick-slider button {
-  display: none !important; //editar desde la base
+  .slick-slider {
+    //ver si hago flechas o no
+    .slick-track {
+      display: flex;
+    }
+
+    //position: relative;
+
+    .slick-arrow {
+      display: none !important; //editar desde la base
+      /*height: 150px;
+      width: 100px;
+      position: absolute;
+      z-index: 1000;
+
+      display: block;
+
+      padding: 0;
+
+      cursor: pointer;
+
+      color: black;
+      border: none;
+      outline: none;
+      background: red;
+
+      &.slick-next {
+        right: -5vw;
+        top: 0;
+      }
+      &.slick-prev {
+        left: 0;
+        top: 0;
+      }*/
+    }
+  }
 }
 
 /*.img-options {
@@ -424,6 +457,6 @@ form {
 }
 
 // Bootstrap Sass Imports
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../../node_modules/slick-carousel/slick/slick.css";
+//@import "../../node_modules/slick-carousel/slick/slick-theme.css";
