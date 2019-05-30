@@ -3,8 +3,6 @@
 @import url("fonts/ArcadeClassic/arcadeclassic.css");
 @import url("fonts/Pixelmix/pixelmix.css");
 @import url("fonts/PressStart/pressstart.css");
-@import url(~slick-carousel/slick/slick.css);
-@import url(~slick-carousel/slick/slick-theme.css);
 * {
   font-family: "Open Sans", sans-serif; }
 
@@ -196,11 +194,36 @@ footer {
     color: white;
     width: 150px; }
 
-.slick-track {
-  display: flex; }
+.consoles-slider-container {
+  overflow: hidden !important; }
+  .consoles-slider-container .slick-slider .slick-track {
+    display: flex; }
+  .consoles-slider-container .slick-slider .slick-arrow {
+    display: none !important;
+      /*height: 150px;
+      width: 100px;
+      position: absolute;
+      z-index: 1000;
 
-.slick-slider button {
-  display: none !important; }
+      display: block;
+
+      padding: 0;
+
+      cursor: pointer;
+
+      color: black;
+      border: none;
+      outline: none;
+      background: red;
+
+      &.slick-next {
+        right: -5vw;
+        top: 0;
+      }
+      &.slick-prev {
+        left: 0;
+        top: 0;
+      }*/ }
 
 /*.img-options {
   background-color: $primary;
