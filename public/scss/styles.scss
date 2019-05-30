@@ -48,6 +48,11 @@ $carousel-indicator-height: 16px;
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  /*max-width: 100vw;
+  overflow: hidden;*/
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -287,14 +292,23 @@ footer {
 /*        Product page        */
 /******************************/
 .consoles-nav .nav-item {
+  display: flex;
+  justify-content: space-evenly;
   .nav-link {
-    max-width: 150px;
+    width: 150px;
   }
   .bottom-name {
     background: #000000; //ver de ponerle una variable
     color: white; //ver de ponerle una variable
     width: 150px;
   }
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-slider button {
+  display: none !important; //editar desde la base
 }
 
 /*.img-options {
@@ -411,3 +425,5 @@ form {
 
 // Bootstrap Sass Imports
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

@@ -11,7 +11,6 @@ class Header extends Component {
     else return "false";
   }
   render() {
-    console.log(window.innerWidth);
     return (
       <header className="container-fluid">
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">

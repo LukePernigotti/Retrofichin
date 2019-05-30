@@ -3,7 +3,7 @@ export const productsData = [
     id: 1,
     name: "Mini Fichín Clásico",
     price: 6500,
-    imgUrl: "../img/consolas/mini_fichin/",
+    imgUrl: "img/consolas/mini_fichin/",
     imgName: {
       0: "frente.png",
       1: "Lateral.png",
@@ -31,7 +31,7 @@ export const productsData = [
     id: 2,
     name: "Mini Fichín Nespi",
     price: 8500,
-    imgUrl: "../img/consolas/",
+    imgUrl: "img/consolas/",
     imgName: { 0: "mini_fichin_nespi.jpg" },
     icon: "m_nespi",
     miniDetails: {
@@ -52,7 +52,7 @@ export const productsData = [
     id: 3,
     name: "Mini Fichín Cooler",
     price: 8500,
-    imgUrl: "../img/consolas/",
+    imgUrl: "img/consolas/",
     imgName: { 0: "mini_fichin_cooler.jpg" },
     icon: "m_cooler",
     miniDetails: {
@@ -73,7 +73,7 @@ export const productsData = [
     id: 4,
     name: "Doble Palanca",
     price: 7000,
-    imgUrl: "../img/consolas/",
+    imgUrl: "img/consolas/",
     imgName: { 0: "doble_palanca_md.jpg" },
     icon: "m_doblepalanca",
     miniDetails: {
@@ -94,7 +94,7 @@ export const productsData = [
     id: 5,
     name: "Bartop",
     price: 10000,
-    imgUrl: "../img/consolas/",
+    imgUrl: "img/consolas/",
     imgName: { 0: "bartop_md.png" },
     icon: "m_bartop",
     miniDetails: {
@@ -115,7 +115,7 @@ export const productsData = [
     id: 6,
     name: "Arcade",
     price: 11500,
-    imgUrl: "../img/consolas/",
+    imgUrl: "img/consolas/",
     imgName: { 0: "arcade_md.jpg" },
     icon: "m_arcade",
     miniDetails: {

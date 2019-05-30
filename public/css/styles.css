@@ -3,8 +3,14 @@
 @import url("fonts/ArcadeClassic/arcadeclassic.css");
 @import url("fonts/Pixelmix/pixelmix.css");
 @import url("fonts/PressStart/pressstart.css");
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 * {
   font-family: "Open Sans", sans-serif; }
+
+body {
+  /*max-width: 100vw;
+  overflow: hidden;*/ }
 
 ul {
   list-style: none;
@@ -180,12 +186,21 @@ footer {
 /******************************/
 /*        Product page        */
 /******************************/
-.consoles-nav .nav-item .nav-link {
-  max-width: 150px; }
-.consoles-nav .nav-item .bottom-name {
-  background: #000000;
-  color: white;
-  width: 150px; }
+.consoles-nav .nav-item {
+  display: flex;
+  justify-content: space-evenly; }
+  .consoles-nav .nav-item .nav-link {
+    width: 150px; }
+  .consoles-nav .nav-item .bottom-name {
+    background: #000000;
+    color: white;
+    width: 150px; }
+
+.slick-track {
+  display: flex; }
+
+.slick-slider button {
+  display: none !important; }
 
 /*.img-options {
   background-color: $primary;
